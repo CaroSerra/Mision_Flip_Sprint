@@ -1,0 +1,72 @@
+import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
+import {
+  DynamoDBDocumentClient,
+  GetCommand,
+  PutCommand,
+  ScanCommand,
+} from "@aws-sdk/lib-dynamodb";
+
+const ddbDocClient = DynamoDBDocumentClient.from(new DynamoDBClient({}));
+
+export const handler = async (event) => {
+  try {
+    console.log("Event received:", JSON.stringify(event, null, 2));
+
+    const method = event.httpMethod;
+    const clientTable = "client";
+
+    // GET
+    if (method === "GET") {
+      const bodyData = JSON.parse(event.body || "{}");
+      const { clientID } = bodyData;
+
+      // Por ID
+      if (clientID) {
+        const clientResult = await ddbDocClient.send(
+          new GetCommand({
+            TableName: clientTable,
+            Key: { clientID },
+          })
+        );
+
+        if (!clientResult.Item) {
+          return {
+            statusCode: 404,
+            body: JSON.stringify({ message: "Client not found" }),
+          };
+        }
+
+        return {
+          statusCode: 200,
+          body: JSON.stringify(clientResult.Item),
+        };
+      }
+
+      // Si no pasamos ID, sacamos la tabla entera
+      const allClients = await ddbDocClient.send(
+        new ScanCommand({
+          TableName: clientTable,
+        })
+      );
+
+      return {
+        statusCode: 200,
+        body: JSON.stringify(allClients.Items),
+      };
+    }
+
+    // Método no permitido
+    else {
+      return {
+        statusCode: 405,
+        body: JSON.stringify({ message: `Method ${method} not allowed` }),
+      };
+    }
+  } catch (error) {
+    console.error("Error:", error);
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ message: error.message }),
+    };
+  }
+};
