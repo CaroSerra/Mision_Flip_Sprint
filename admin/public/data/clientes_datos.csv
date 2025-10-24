@@ -1,0 +1,39 @@
+numero_compras,genero,direccion,gasto_total,cliente_id,edad,discordWebhook,categoria_gasto
+1,M,"Calle de la Luna 2, Buenos Aires",4679.42,client310,22,,1
+46,O,Arapiles 14,4775.89,client347,58,,1
+51,F,"Avenida Siempre Viva 742, Springfield",4414.23,client184,62,,1
+71,M,"Calle Falsa 123, Ciudad Inventada",3298.53,client906,73,,1
+67,O,Arapiles 14,3241.5,client654,32,,1
+50,M,"Plaza Mayor 5, Madrid",1883.47,client360,55,,0
+49,O,Arapiles 14,1690.44,client307,54,,0
+88,O,"Avenida Siempre Viva 742, Springfield",598.57,client812,60,,0
+44,F,"Boulevard del Sol 45, Playa del Carmen",3088.92,client629,20,,1
+31,M,"Calle de la Luna 2, Buenos Aires",2708.36,client725,73,,1
+85,M,"Calle Falsa 123, Ciudad Inventada",4293.58,client117,51,,1
+23,O,Forguneta 99,3217.98,client032,72,,1
+99,F,"Calle Falsa 123, Ciudad Inventada",595.12,client423,61,,0
+58,M,"Avenida Siempre Viva 742, Springfield",4312.39,client735,21,,1
+73,O,"Boulevard del Sol 45, Playa del Carmen",1232.89,client704,62,,0
+82,M,"Avenida Siempre Viva 742, Springfield",2962.44,client928,65,,1
+1,O,"Avenida Siempre Viva 742, Springfield",95.84,client977,45,,0
+88,M,"Avenida Siempre Viva 742, Springfield",2394.92,client617,49,,0
+17,M,"Plaza Mayor 5, Madrid",2182.07,client382,44,,0
+58,M,"Plaza Mayor 5, Madrid",4160.86,client195,20,,1
+70,M,"Avenida Siempre Viva 742, Springfield",1854.15,client002,53,,0
+70,M,"Calle de la Luna 2, Buenos Aires",300.12,client142,38,,0
+3,F,"Boulevard del Sol 45, Playa del Carmen",4080.94,client910,38,,1
+89,O,"Avenida Siempre Viva 742, Springfield",4860.68,client912,64,,1
+29,F,"Calle Falsa 123, Ciudad Inventada",475.82,client677,24,,0
+83,M,"Boulevard del Sol 45, Playa del Carmen",807.23,client557,41,,0
+96,M,"Calle Falsa 123, Ciudad Inventada",4908.07,client205,28,,1
+26,F,Arapiles 14,537.6,client970,48,,0
+30,M,"Plaza Mayor 5, Madrid",3348.18,client096,43,,1
+19,M,"Boulevard del Sol 45, Playa del Carmen",3984.82,client863,56,,1
+68,O,Forguneta 99,2699.62,client321,36,,1
+33,F,"Plaza Mayor 5, Madrid",3221.49,client885,21,,1
+28,O,"Plaza Mayor 5, Madrid",105.52,client341,29,,0
+6,F,"Calle de la Luna 2, Buenos Aires",1555.21,client479,51,,0
+74,O,Forguneta 99,2066.58,client873,28,,0
+10,F,Gran Via 1,25.0,client001,25,https://discord.com/api/webhooks/1425924423134875749/XCAF79pYedf0DZhL3nooWSnCSitQsTpi8Co2EQqaf3kiVKtgl1d8tI5sFti2q6VCnhxd,0
+76,O,Arapiles 14,1753.21,client987,71,,0
+84,F,"Boulevard del Sol 45, Playa del Carmen",1990.9,client729,35,,0
