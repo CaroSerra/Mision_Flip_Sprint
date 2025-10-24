@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Pedidos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Pantalla de Login/Registro -->
+        <div id="auth-container" class="container">
+            <div class="auth-form">
+                <h2>Iniciar Sesión</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="client-id">ID de Cliente (Nombre):</label>
+                        <input type="text" id="client-id" placeholder="Ingresa tu nombre" required>
+                    </div>
+                    <button type="submit">Acceder a Mis Pedidos</button>
+                </form>
+                <p class="info-text">Solo ingresa tu nombre para acceder</p>
+            </div>
+        </div>
+
+        <!-- Pantalla principal después del login -->
+        <div id="main-container" class="container hidden">
+            <header>
+                <h1>Mis Pedidos - <span id="client-name"></span></h1>
+                <button id="logout-btn" class="logout-btn">Cerrar Sesión</button>
+            </header>
+            
+            <div class="content">
+                <div class="orders-section">
+                    <h2>Datos del Pedido</h2>
+                    <div id="orders-container" class="orders-container">
+                        <div class="loading">Cargando pedidos...</div>
+                    </div>
+                </div>
+                
+                <div class="map-section">
+                    <h2>Ubicación del Pedido</h2>
+                    <div class="map-placeholder">
+                        <img src="https://via.placeholder.com/400x300/4A90E2/FFFFFF?text=Mapa+del+Pedido" 
+                             alt="Mapa de ubicación" class="map-image">
+                        <p class="map-info">Aquí se mostraría la ubicación en tiempo real del pedido</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
